@@ -1,0 +1,71 @@
+[
+  {
+    "weight": 200,
+    "numberOfPassengers": 20,
+    "numberOfWheels": 4,
+    "MAX_SPEED": 200,
+    "MIN_SPEED": 0,
+    "MAX_NUMBER_OF_PASSENGERS": 5,
+    "MIN_NUMBER_OF_PASSENGERS": 0,
+    "name": "bus",
+    "speed": 50
+  },
+  {
+    "numberOfPlaces": 20,
+    "weight": 300,
+    "numberOfPassengers": 25,
+    "numberOfWheels": 4,
+    "MAX_SPEED": 200,
+    "MIN_SPEED": 0,
+    "MAX_NUMBER_OF_PASSENGERS": 5,
+    "MIN_NUMBER_OF_PASSENGERS": 0,
+    "name": "cityBus",
+    "speed": 60
+  },
+  {
+    "numberOfDeckers": 2,
+    "weight": 400,
+    "numberOfPassengers": 50,
+    "numberOfWheels": 8,
+    "MAX_SPEED": 200,
+    "MIN_SPEED": 0,
+    "MAX_NUMBER_OF_PASSENGERS": 5,
+    "MIN_NUMBER_OF_PASSENGERS": 0,
+    "name": "longDistanceBus",
+    "speed": 70
+  },
+  {
+    "weight": 200,
+    "numberOfPassengers": 2,
+    "numberOfWheels": 0,
+    "MAX_SPEED": 200,
+    "MIN_SPEED": 0,
+    "MAX_NUMBER_OF_PASSENGERS": 5,
+    "MIN_NUMBER_OF_PASSENGERS": 0,
+    "name": "jeep",
+    "speed": 100
+  },
+  {
+    "AWDController": true,
+    "weight": 150,
+    "numberOfPassengers": 3,
+    "numberOfWheels": 4,
+    "MAX_SPEED": 200,
+    "MIN_SPEED": 0,
+    "MAX_NUMBER_OF_PASSENGERS": 5,
+    "MIN_NUMBER_OF_PASSENGERS": 0,
+    "name": "awdJeep",
+    "speed": 150
+  },
+  {
+    "weight": 250,
+    "numberOfPassengers": 4,
+    "numberOfWheels": 3,
+    "MAX_SPEED": 200,
+    "MIN_SPEED": 0,
+    "MAX_NUMBER_OF_PASSENGERS": 5,
+    "MIN_NUMBER_OF_PASSENGERS": 0,
+    "name": "threeWheelJeep",
+    "speed": 300
+  }
+]
