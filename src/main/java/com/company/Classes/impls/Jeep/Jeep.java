@@ -1,21 +1,29 @@
-package com.company.impls.Bus;
+package com.company.Classes.impls.Jeep;
 
-import com.company.impls.Mashine;
+import com.company.Classes.impls.Mashine;
+
+import java.io.Serializable;
 
 /**
- * Created by Asus on 27.04.2017.
+ * Created by Asus on 25.04.2017.
  */
-public class Bus extends Mashine
+public class Jeep extends Mashine implements Serializable
 {
     private int weight;
     private int numberOfPassengers;
     private int numberOfWheels;
 
-    public Bus(String name, int speed, int weight, int numberOfPassengers, int numberOfWheels) {
+    public Jeep(String name, int speed, int weight, int numberOfPassengers, int numberOfWheels) {
         super(name, speed);
         this.weight = weight;
         this.numberOfPassengers = numberOfPassengers;
         this.numberOfWheels = numberOfWheels;
+    }
+
+    public Jeep(String name, int speed, int weight, int numberOfPassengers) {
+        super(name, speed);
+        this.weight = weight;
+        this.numberOfPassengers = numberOfPassengers;
     }
 
     @Override
@@ -47,17 +55,17 @@ public class Bus extends Mashine
 
     @Override
     public String showName() {
-        return "Bus";
+        return "Jeep";
     }
 
     @Override
     public String toString() {
-        return "Bus{" +
+        return "Jeep{" +
                 "weight=" + weight +
                 ", numberOfPassengers=" + numberOfPassengers +
                 ", numberOfWheels=" + numberOfWheels +
                 ", name='" + super.getName() + '\'' +
                 ", speed=" + super.getSpeed() +
-                '}';
+                '}' + "\n";
     }
 }

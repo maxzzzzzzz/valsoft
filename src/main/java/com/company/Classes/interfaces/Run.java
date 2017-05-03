@@ -1,4 +1,4 @@
-package com.company.interfaces;
+package com.company.Classes.interfaces;
 
 /**
  * Created by Asus on 25.04.2017.

@@ -1,4 +1,4 @@
-package com.company.impls.Bus;
+package com.company.Classes.impls.Bus;
 
 /**
  * Created by Asus on 27.04.2017.
@@ -28,7 +28,7 @@ public class LongDistanceBus extends Bus
                 ", numberOfWheels=" + super.getNumberOfWheels() +
                 ", name='" + super.getName() + '\'' +
                 ", speed=" + super.getSpeed() +
-                '}';
+                '}' + "\n";
     }
 
     @Override

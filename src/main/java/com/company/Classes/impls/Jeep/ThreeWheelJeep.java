@@ -1,4 +1,4 @@
-package com.company.impls.Jeep;
+package com.company.Classes.impls.Jeep;
 
 /**
  * Created by Asus on 25.04.2017.
@@ -24,6 +24,6 @@ public class ThreeWheelJeep extends Jeep
                 ", numberOfWheels=" + super.getNumberOfWheels() +
                 ", name='" + super.getName() + '\'' +
                 ", speed=" + super.getSpeed() +
-                '}';
+                '}' + "\n";
     }
 }

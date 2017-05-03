@@ -1,6 +1,4 @@
-package com.company.impls.Bus;
-
-import java.awt.image.BufferStrategy;
+package com.company.Classes.impls.Bus;
 
 /**
  * Created by Asus on 27.04.2017.
@@ -31,7 +29,7 @@ public class CityBus extends Bus
                 ", numberOfWheels=" + super.getNumberOfWheels() +
                 ", name='" + super.getName() + '\'' +
                 ", speed=" + super.getSpeed() +
-                '}';
+                '}' + "\n";
     }
 
     @Override

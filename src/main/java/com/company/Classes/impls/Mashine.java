@@ -1,11 +1,13 @@
-package com.company.impls;
+package com.company.Classes.impls;
 
-import com.company.interfaces.Run;
+import com.company.Classes.interfaces.Run;
+
+import java.io.Serializable;
 
 /**
  * Created by Asus on 25.04.2017.
  */
-public abstract class Mashine implements Run
+public abstract class Mashine implements Run,Serializable
 {
    public final int MAX_SPEED = 200;
    public final int MIN_SPEED = 0;
@@ -39,5 +41,13 @@ public abstract class Mashine implements Run
 
     @Override
     abstract public String showName();
+
+    @Override
+    public String toString() {
+        return "Mashine{" +
+                "name='" + name + '\'' +
+                ", speed=" + speed +
+                '}' + "\n";
+    }
 }
 

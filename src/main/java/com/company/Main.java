@@ -1,11 +1,11 @@
 package com.company;
 
-import com.company.impls.Bus.Bus;
-import com.company.impls.Bus.CityBus;
-import com.company.impls.Bus.LongDistanceBus;
-import com.company.impls.Jeep.AWDJeep;
-import com.company.impls.Jeep.Jeep;
-import com.company.impls.Jeep.ThreeWheelJeep;
+import com.company.Classes.impls.Bus.Bus;
+import com.company.Classes.impls.Bus.CityBus;
+import com.company.Classes.impls.Bus.LongDistanceBus;
+import com.company.Classes.impls.Jeep.AWDJeep;
+import com.company.Classes.impls.Jeep.Jeep;
+import com.company.Classes.impls.Jeep.ThreeWheelJeep;
 
 public class Main {
 
