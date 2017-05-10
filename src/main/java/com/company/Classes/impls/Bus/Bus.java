@@ -20,6 +20,9 @@ public class Bus extends Mashine implements Serializable
         this.numberOfWheels = numberOfWheels;
     }
 
+    public Bus() {
+    }
+
     @Override
     public int getWeight() {
         return weight;

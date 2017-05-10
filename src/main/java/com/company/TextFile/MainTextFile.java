@@ -55,11 +55,11 @@ public class MainTextFile
         }
 
 
-//        List<String> lines = Files.readAllLines(Paths.get(FILENAME), StandardCharsets.UTF_8);
-//        for(String line: lines)
-// {
-//            System.out.println(line);
-//        }
+      List<String> lines = Files.readAllLines(Paths.get(FILENAME), StandardCharsets.UTF_8);
+        for(String line: lines)
+ {
+            System.out.println(line);
+        }
         FileReader fileReader = new FileReader(FILENAME);
         ArrayList<String> strings = new ArrayList<>();
 

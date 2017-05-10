@@ -22,6 +22,9 @@ public abstract class Mashine implements Run,Serializable
         this.speed = speed;
     }
 
+    public Mashine() {
+    }
+
     public String getName() {
         return name;
     }
