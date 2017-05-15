@@ -12,6 +12,7 @@ public class Bus extends Mashine implements Serializable
     private int weight;
     private int numberOfPassengers;
     private int numberOfWheels;
+    private int id;
 
     public Bus(String name, int speed, int weight, int numberOfPassengers, int numberOfWheels) {
         super(name, speed);
@@ -50,6 +51,13 @@ public class Bus extends Mashine implements Serializable
         this.numberOfWheels = numberOfWheels;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     @Override
     public String showName() {
         return "Bus";
