@@ -22,8 +22,9 @@ public class MainDataBase2
         }
         // System.out.println(databaseDAO.deleteBook(new Book("book2", 25.5, 399, 2000, 9)));
         Bus bus = new Bus("ultraBus",400,550,65,18);
-        busDao.updateBus(bus,2);
-        System.out.println(busDao.getBus(2));
+        busDao.saveBus(bus);
+//        busDao.updateBus(bus,2);
+//        System.out.println(busDao.getBus(2));
 
     }
 }

@@ -24,7 +24,12 @@ public class BusDao implements IBusDao
         return instance;
     }
 
-    private BusDao() throws SQLException {
+    public BusDao() throws SQLException {
+        try {
+            Class.forName("org.postgresql.Driver");
+        }catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         connection = DriverManager.getConnection(URL,USER,PASSWORD);
     }
 
