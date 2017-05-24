@@ -13,6 +13,6 @@ public interface IBusDao
     void saveBus(Bus bus) throws SQLException;
     List<Bus> allBuses() throws SQLException;
     boolean deleteBus(Bus bus) throws SQLException;
-    public void updateBus(Bus bus,int id) throws SQLException;
+    public void updateBus(Bus bus) throws SQLException;
     public Bus getBus(int id) throws SQLException;
 }

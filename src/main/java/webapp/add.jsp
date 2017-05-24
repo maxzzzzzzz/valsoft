@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Add something</title>
-    <script src="/js/JQuery.js"></script>
+    <script src= /js/JQuery.js"></script>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="/js/bootstrap.js"></script>
 

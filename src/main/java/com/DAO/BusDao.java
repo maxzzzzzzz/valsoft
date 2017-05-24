@@ -73,17 +73,33 @@ public class BusDao implements IBusDao
         return rowDeleted;
     }
 
-    public void updateBus(Bus bus,int id) throws SQLException {
-        String sql = "UPDATE bus SET weight = ?, numberofpassengers = ?, numberofwheels = ?, name = ?,speed = ? WHERE id = ?";
-        //sql += " WHERE id = ?";
-        PreparedStatement statement = connection.prepareStatement(sql);
-        statement.setInt(1,bus.getWeight());
-        statement.setInt(2, bus.getNumberOfPassengers());
-        statement.setInt(3, bus.getNumberOfWheels());
-        statement.setString(4, bus.getName());
-        statement.setInt(5, bus.getSpeed());
-        statement.setInt(6, id);
-        statement.close();
+    public void updateBus(Bus bus)
+    {
+        try
+        {
+            PreparedStatement ps;
+            if ( bus.getId() > 0)
+            {
+                ps = connection.prepareStatement( "UPDATE bus SET weight = ?, numberofpassengers = ?, numberofwheels = ?, name = ?,speed = ? WHERE id = ?");
+                ps.setInt( 3, bus.getId());
+            }
+            else
+            {
+                ps = connection.prepareStatement( "INSERT INTO bus (weight, numberofpassengers,numberofwheels,name,speed) VALUES (?,?,?,?,?)" );
+            }
+
+            ps.setInt( 1, bus.getWeight());
+            ps.setInt( 2, bus.getNumberOfPassengers());
+            ps.setInt( 3, bus.getNumberOfWheels());
+            ps.setString( 4, bus.getName());
+            ps.setInt( 5, bus.getSpeed());
+            ps.executeUpdate();
+            ps.close();
+        }
+        catch( SQLException e )
+        {
+            e.printStackTrace();
+        }
     }
 
     public Bus getBus(int id) throws SQLException {

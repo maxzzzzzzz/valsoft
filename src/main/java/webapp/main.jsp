@@ -18,6 +18,7 @@
     <div class="container">
         <button formaction="/serv/add" formmethod="POST">To ADD</button>
         <button formaction="/serv/showAll" formmethod="POST">To ShowALL</button>
+        <button formaction="/serv/inputId" formmethod="POST">To Show By ID</button>
     </div>
 </form>
 </body>
